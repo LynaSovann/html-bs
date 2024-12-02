@@ -8,86 +8,150 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="/customize-css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <style>
+    .k {
+      font-family: "Kantumruy Pro", sans-serif;
+    } 
+    
+    #subscription-section {
+    background-color: #111827; /* bg-gray-900 */
+    margin-top: 40px;
+    width: 90%;
+    border-radius: 16px; /* sm:rounded-3xl */
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px; /* xl:py-32 */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    overflow: hidden;
+    position: relative;
+  }
+
+  #subscription-section .subscription-text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d1d5db; /* text-gray-300 */
+    font-size: 1.25rem; /* text-lg */
+  }
+
+  #subscription-section .subscription-subtext {
+    font-size: 0.875rem; /* text-sm */
+    color: #9ca3af; /* text-gray-500 */
+  }
+
+  #subscription-section .subscription-form {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #subscription-section .subscription-form input {
+    min-width: 200px;
+    margin-right: 10px;
+    padding: 12px; /* py-3 */
+    border-radius: 8px;
+    border: 1px solid #374151; /* border-gray-600 */
+    background-color: #1f2937; /* bg-gray-800 */
+    color: #d1d5db; /* text-gray-300 */
+    outline: none;
+    font-size: 0.875rem; /* text-sm */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #subscription-section .subscription-form button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #f9fafb; /* bg-gray-50 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    font-weight: bold;
+    font-size: 0.875rem; /* text-sm */
+    color: #111827; /* text-gray-900 */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #subscription-section .subscription-form button:hover {
+    background-color: #e5e7eb; /* bg-gray-200 */
+  }
+
+    #main div {
+        width: 70px;
+        height: 70px;
+      }
+    </style>
   </head>
-  <body>
-    <div>
-      <!-- header and logo -->
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="https://rupp.edu.kh/images/rupp-logo.png"
-              alt="rupp logo"
-            />
+
+  <body class="k">
+   <div>
+    <!-- Header and Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="height: 150px;">
+        <div class="container d-flex justify-content-between align-items-center" style="height: 100%;">
+          <!-- Logo Section -->
+          <a class="navbar-brand d-flex align-items-center" href="#" style="flex: 0 0 auto;">
+            <img src="https://rupp.edu.kh/images/rupp-logo.png" alt="RUPP Logo" style="height: 100%; max-height: 130px; margin-right: 15px;">
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div>
 
-        
-            <ul class="text-uppercase  navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link active text-primary" style="font-size: 12px;" aria-current="page" href="#">Home |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">About |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Project |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Management |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Foundation Studies |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">IRO |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Graduate Programs |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">UMAP |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Contact |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">E-Library |</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" style="font-size: 12px;" href="#">Journal |</a>
-              </li>
-            </ul>
-            
-            <p>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</p>
-            <p class="text-uppercase">Royal University of Phnom Penh</p>
-            <div>
-              <p class="text-end">Education, Research, and Service to Society</p>
-            </div>
-            
-          </div>
-
+          <!-- School Information Section -->
+          <div class="text-center" style="flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <p style="margin: 0; font-size: 24px; font-weight: bold; color: #333;">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</p>
+            <p class="text-uppercase" style="margin: 0; font-size: 16px; color: #555;">Royal University of Phnom Penh</p>
+            <p style="margin: 0; font-size: 14px; color: #777;">Education, Research, and Service to Society</p>
           </div>
         </div>
-      </nav>
+    </nav>
 
-      <!-- nav section -->
-      <section class="w-100 bg-primary text-white ">
+    <!-- Navigation Links -->
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; padding: 15px 10px; background-color: #f8f9fa; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); height: 60px;">
+        
+    <ul class="text-uppercase d-flex list-unstyled mb-0" style="gap: 20px; align-items: center; height: 100%;">
+        <li class="nav-item">
+          <a class="nav-link active text-primary fw-bold" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Foundation Studies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">IRO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Graduate Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">UMAP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">E-Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#" style="font-size: 14px; text-decoration: none; line-height: 60px;">Journal</a>
+        </li>
+    </ul>
+    </div>
+
+    <!-- nav section -->
+    <section class="w-100 bg-primary text-white">
         <nav class="navbar navbar-light text-center">
           <div class="container">
               <ul class="text-uppercase gap-2 col justify-content-between w-100 d-flex flex-row navbar-nav me-auto mb-2 mb-lg-0">
@@ -121,12 +185,12 @@
               </ul>
           </div>
         </nav>
-      </section>
+    </section>
 
-      <!-- slide show -->
-      <section class="container">
+    <!-- slide show -->
+    <section class="container">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner" style="margin: 5%;" >
             <div class="carousel-item active">
               <img src="https://www.rupp.edu.kh/img/slideshow/community_event1.jpg" class="d-block w-100" alt="slide1">
             </div>
@@ -144,21 +208,140 @@
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <!-- content and body  -->
-      <section></section>
+    <!-- content and body  -->
+    <section>
+          <div style="display: flex; justify-content: space-evenly; gap: 20px; padding: 20px; margin: 5%;">
+          <!-- Scholarship Section -->
+          <div style="background-color: beige; border: 1px solid #c8c8c8; border-radius: 8px; padding: 20px; width: 30%; font-family: Arial, Helvetica, sans-serif;">
+            <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">SCHOLARSHIP</p>
+            <ul style="list-style-type: none; padding: 0;">
+              <li><a href="#" style="color: red; text-decoration: none;">Higher Education for ASEAN Talents (HEAT)</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">Nankai University Scholarship</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">Scholarship at Hong Kong Polytechnic</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">UTAR Scholarship for CLMV Countries 2017-2018</a></li>
+            </ul>
+          </div>
 
-      <!-- footer section -->
-      <footer>
-        
-      </footer>
+          <!-- Khmer Download Section -->
+          <div style="background-color: beige; border: 1px solid #c8c8c8; border-radius: 8px; padding: 20px; width: 30%;">
+            <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">ទាញយកឯកសារ</p>
+            <p style="font-size: 14px; margin-bottom: 10px;">ពាក្យចូលរៀនឆ្នាំសិក្សា ២០២២-២០២៣</p>
+            <ol>
+              <li><a href="#" style="color: red; text-decoration: none;">ក្របសឺមីទំហំ A3</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ពាក្យចុះឈ្មោះចូលរៀនទំហំ A4</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ទម្រង់សម្រាប់បញ្ចេញមតិកែលម្អ</a></li>
+            </ol>
+            <p style="font-weight: bold; font-size: 14px; margin-top: 20px;">ICT Master Plan and Policy</p>
+            <ul style="padding-left: 20px;">
+              <li><a href="#" style="color: red; text-decoration: none;">ICT Master Plan Summary</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ICT Master Policy Summary</a></li>
+            </ul>
+          </div>
+
+          <!-- Duplicate Section for Consistency -->
+          <div style="background-color: beige; border: 1px solid #c8c8c8; border-radius: 8px; padding: 20px; width: 30%;">
+            <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">ទាញយកឯកសារ</p>
+            <p style="font-size: 14px; margin-bottom: 10px;">ពាក្យចូលរៀនឆ្នាំសិក្សា ២០២២-២០២៣</p>
+            <ol>
+              <li><a href="#" style="color: red; text-decoration: none;">ក្របសឺមីទំហំ A3</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ពាក្យចុះឈ្មោះចូលរៀនទំហំ A4</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ទម្រង់សម្រាប់បញ្ចេញមតិកែលម្អ</a></li>
+            </ol>
+            <p style="font-weight: bold; font-size: 14px; margin-top: 20px;">ICT Master Plan and Policy</p>
+            <ul style="padding-left: 20px;">
+              <li><a href="#" style="color: red; text-decoration: none;">ICT Master Plan Summary</a></li>
+              <li><a href="#" style="color: red; text-decoration: none;">ICT Master Policy Summary</a></li>
+            </ul>
+          </div>
+          </div>
+
+    </section>
+
+    <article style="margin: 30px;">
+        <!-- overview of university  -->
+          <div style="height: auto; display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 100%; min-height: 60px; background-color: red; text-align: center; font-weight: bold; color: aliceblue; display: flex; align-items: center; justify-content: center;">
+              overview of University
+            </div>
+            <!-- Table Section -->
+            <div style="width: 100%; display: flex; justify-content: center; margin: 5%;">
+                <table style="align-items: center; gap: 50px;">
+                  <tr>
+                    <th>
+                      <img width="200" height="auto" src="image/undraw_real_time_analytics_re_yliv.png" alt="calendar" />
+                    </th>
+                    <th>
+                      <img width="200" height="auto" src="/html-bs/image/undraw_Community_re_cyrm.png" alt="business-group" />
+                    </th>
+                    <th>
+                      <img width="200" height="auto" src="/html-bs/image/undraw_Reading_time_re_phf7.png" alt="reading" />
+                    </th>
+                    <th>
+                      <img width="200" height="auto" src="/html-bs/image/undraw_education_f8ru2.png" alt="graduation-cap" />
+                    </th>
+                    <th>
+                      <img width="200" height="auto" src="/html-bs/image/undraw_sharing_knowledge_03vp.png" alt="graduation-cap" />
+                    </th>
+                  </tr>
+                  <tr style="font-size: 14px; color: gray; font-family: Arial, Helvetica, sans-serif; text-align: center;">
+                    <th>
+                      <span>Established year:</span><b style="color: tomato;">1960</b>
+                    </th>
+                    <th>
+                      <span>Staff:</span><b style="color: tomato;">1140</b>
+                    </th>
+                    <th>
+                      <span>Student:</span><b style="color: tomato;">30071</b>
+                    </th>
+                    <th>
+                      <span>Alumni:</span><b style="color: tomato;">688897</b>
+                    </th>
+                    <th>
+                      <span>Int. Partners:</span><b style="color: tomato;">222</b>
+                    </th>
+                  </tr>
+                </table>
+            </div>
+
+            <!-- subscription-section -->
+            <div id="subscription-section">
+                  <p class="subscription-text">
+                    Subscribe to the RUPP
+                    <br>
+                    <span class="subscription-subtext">
+                      RUPP's Official Newspaper
+                    </span>
+                  </p>
+                  <form class="subscription-form">
+                    <input id="email-address" name="email" type="email" autocomplete="email" required
+                          placeholder="Enter your email">
+                    <button type="submit">SUEBSCRIBE</button>
+                  </form>
+            </div>
+
+          </div>
+    </article>
+ 
     </div>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #f8f9fa; padding: 20px; border-top: 2px solid #c8c8c8; margin-top: 5%;">
+      <p style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #333; line-height: 1.5; margin: 0;">
+        All Rights Reserved, Copyright © 2024 Royal University Of Phnom Penh (RUPP)
+        <br>
+        Russian Federation Boulevard, Toul Kork, Phnom Penh, Cambodia. Tel: 855-23-883-640 Fax: 855-23-880-116
+        <br>
+        Designed By: 
+        <a href="" style="text-decoration: none; font-weight: bold;padding-bottom: 2px;">IT Center</a>
+      </p>
+    </footer>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
 </html>
